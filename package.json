@@ -7,7 +7,7 @@
     "dist/"
   ],
   "scripts": {
-    "build": "npm-run-all clean build:options format lint cover build:lib build:storybook",
+    "build": "npm-run-all clean build:options format lint build:lib build:storybook",
     "build:lib": "rollup -c",
     "build:options": "./scripts/build-options.js",
     "build:storybook": "build-storybook -c .storybook -o ./docs",

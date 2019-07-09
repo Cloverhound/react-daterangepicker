@@ -5,7 +5,7 @@ const wrap = require('wordwrap')(2, 80);
 
 const buildOptions = () => {
   const body = fs.readFileSync(
-    `${__dirname}/../node_modules/bootstrap-daterangepicker/website/index.html`
+    `${__dirname}/../node_modules/daterangepicker/website/index.html`
   );
   const $ = cheerio.load(body);
   let options = $('#options ul li code')
@@ -55,7 +55,7 @@ const buildOptions = () => {
 const printMissingOptions = includedOptions => {
   const dateRangeOptions = fs
     .readFileSync(
-      `${__dirname}/../node_modules/bootstrap-daterangepicker/daterangepicker.js`,
+      `${__dirname}/../node_modules/daterangepicker/daterangepicker.js`,
       'utf-8'
     )
     .toString()
