@@ -8,7 +8,10 @@ const buildOptions = () => {
     `${__dirname}/../node_modules/daterangepicker/website/index.html`
   );
   const $ = cheerio.load(body);
-  let options = $('#options ul li code')
+  let options = $('h1 #options')
+    .parent()
+    .next('ul')
+    .find('li code')
     .map(function() {
       return $(this)
         .text()
