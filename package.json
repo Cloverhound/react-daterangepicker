@@ -1,7 +1,7 @@
 {
-  "name": "react-bootstrap-daterangepicker",
+  "name": "react-daterangepicker",
   "version": "4.1.0",
-  "description": "A date/time picker for react (using bootstrap). This is a react port of: https://github.com/dangrossman/bootstrap-daterangepicker",
+  "description": "A date/time picker for react. This is a react port of: https://github.com/dangrossman/daterangepicker",
   "main": "./dist/bundle.js",
   "files": [
     "dist/"
@@ -33,7 +33,6 @@
   },
   "license": "Apache-2.0",
   "peerDependencies": {
-    "bootstrap-daterangepicker": "*",
     "jquery": "*",
     "moment": "*",
     "prop-types": "*",
@@ -80,7 +79,6 @@
   "keywords": [
     "react",
     "react-component",
-    "bootstrap",
     "date",
     "range",
     "picker",
