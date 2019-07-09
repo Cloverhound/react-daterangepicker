@@ -15,11 +15,5 @@ export default {
       plugins: ['external-helpers']
     })
   ],
-  external: [
-    'bootstrap-daterangepicker',
-    'moment',
-    'jquery',
-    'react',
-    'prop-types'
-  ]
+  external: ['daterangepicker', 'moment', 'jquery', 'react', 'prop-types']
 };
